@@ -15,3 +15,7 @@ module2/.DS_Store
 module2/BiGram/.ipynb_checkpoints/
 module2/*/.ipynb_checkpoints/
 module2/BiGram/bigram_wiki_chk_pts/*
+module2/BiGram/checkpoint
+module2/BiGram/bigram_wiki_chk_pts.meta
+module2/BiGram/bigram_wiki_chk_pts.index
+module2/BiGram/bigram_wiki_chk_pts.data-00000-of-00001
