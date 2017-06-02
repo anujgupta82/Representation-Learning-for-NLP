@@ -9,6 +9,10 @@
 ./Utils/*.pyc
 ./Utils/tsne_python/*.pyc
 
+# useless notebooks
+Random_code.ipynb
+
+#checkpoints
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 **/*.ipynb_checkpoints/
