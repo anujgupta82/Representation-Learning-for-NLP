@@ -14,13 +14,14 @@ def my_tokenizer(s):
     return s.split()
 
 def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
-    repo_path = os.path.dirname(os.path.realpath('__file__'))
+    #repo_path = os.path.dirname(os.path.realpath('__file__'))
     #print "inside get_wikipedia_data() : current path = %s" %repo_path
     #print "-----------------------------------------------"
     
-    data_path = repo_path + "/data/"
+    #data_path = repo_path + "/data/"
     
     #prefix = '../../data/'
+    data_path = '../../data/'
     input_files = [f for f in os.listdir(data_path) if f.startswith('enwiki') and f.endswith('txt')]
 
     # return variables
