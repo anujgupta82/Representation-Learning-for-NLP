@@ -14,8 +14,14 @@ def my_tokenizer(s):
     return s.split()
 
 def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
-    prefix = '../../data/'
-    input_files = [f for f in os.listdir(prefix) if f.startswith('enwiki') and f.endswith('txt')]
+    repo_path = os.path.dirname(os.path.realpath('__file__'))
+    #print "inside get_wikipedia_data() : current path = %s" %repo_path
+    #print "-----------------------------------------------"
+    
+    data_path = repo_path + "/data/"
+    
+    #prefix = '../../data/'
+    input_files = [f for f in os.listdir(data_path) if f.startswith('enwiki') and f.endswith('txt')]
 
     # return variables
     sentences = []
@@ -29,7 +35,7 @@ def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
 
     for f in input_files:
         #print("reading:", f)
-        for line in open(prefix + f):
+        for line in open(data_path + f):
             line = line.strip()
             # don't count headers, structured data, lists, etc...
             if line and line[0] not in ('[', '*', '-', '|', '=', '{', '}'):
@@ -82,7 +88,13 @@ def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
 
 
 def readWikiData(n_vocab=500):
-    filePath = "../data/en-wiki.txt"
+    repo_path = os.path.dirname(os.path.realpath('__file__'))
+    #print "inside get_wikipedia_data() : current path = %s" %repo_path
+    #print "-----------------------------------------------"
+    
+    filePath = repo_path + "/data/en-wiki.txt"
+    
+    #filePath = "../data/en-wiki.txt"
 
     # return variables 
     sentences = []
