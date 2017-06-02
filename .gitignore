@@ -6,6 +6,9 @@
 *.json
 *.swp
 
+./Utils/*.pyc
+./Utils/tsne_python/*.pyc
+
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 **/*.ipynb_checkpoints/
