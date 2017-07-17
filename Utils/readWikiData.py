@@ -26,6 +26,7 @@ def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
 
     # return variables
     sentences = []
+    original_sentence = []
     word2idx = {'START': 0, 'END': 1}
     idx2word = ['START', 'END']
     current_idx = 2
@@ -45,6 +46,7 @@ def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
                 else:
                     sentence_lines = line.split('. ')
                 for sentence in sentence_lines:
+                    original_sentence.append(sentence)
                     tokens = my_tokenizer(sentence)
                     for t in tokens:
                         if t not in word2idx:
@@ -85,7 +87,9 @@ def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
             new_sentence = [idx_new_idx_map[idx] if idx in idx_new_idx_map else unknown for idx in sentence]
             sentences_small.append(new_sentence)
 
-    return sentences_small, word2idx_small
+    idx2word_dict = {v:k for k, v in word2idx_small.items()}
+
+    return sentences_small, word2idx_small, idx2word_dict , original_sentence
 
 
 def readWikiData(n_vocab=500):

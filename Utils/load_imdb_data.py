@@ -2,10 +2,10 @@ from pandas import read_csv, concat
 
 def load_imdb_data():
 
-    train_pos_file_path = "../data/train-pos.txt"
-    train_neg_file_path = "../data/train-pos.txt"
-    test_pos_file_path = "../data/test-pos.txt"
-    test_neg_file_path = "../data/test-neg.txt"
+    train_pos_file_path = "../../data/train-pos.txt"
+    train_neg_file_path = "../../data/train-pos.txt"
+    test_pos_file_path = "../../data/test-pos.txt"
+    test_neg_file_path = "../../data/test-neg.txt"
 
     #read file from train_pos_file_path, create a df and set labels as 1
     train_pos_df = read_csv(train_pos_file_path, sep='\n', header = None)
