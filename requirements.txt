@@ -14,6 +14,7 @@ enum34==1.1.6
 funcsigs==1.0.2
 functools32==3.2.3.post2
 gensim==0.12.4
+graphviz==0.8
 html5lib==0.999999999
 ipykernel==4.6.1
 ipython==5.3.0
@@ -46,6 +47,7 @@ pickleshare==0.7.4
 prompt-toolkit==1.0.14
 protobuf==3.2.0
 ptyprocess==0.5.1
+pydot==1.1.0
 Pygments==2.2.0
 pyparsing==2.2.0
 python-dateutil==2.6.0
