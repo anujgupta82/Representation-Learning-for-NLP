@@ -19,6 +19,9 @@ It has 4 modules:
 	* Skip-Thoughts
 4. [Character Vectors](https://github.com/anujgupta82/Representation-Learning-for-NLP/tree/master/module4)
 	* One-hot model
+	* skip-gram based character model
+	* Tweet2Vec
+	* CharCNN (giving some bugs)
 
 
 
