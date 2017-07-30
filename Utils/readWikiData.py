@@ -12,7 +12,7 @@ def my_tokenizer(s):
     s = remove_punctutation(s)
     s = s.lower()
     return s.split()
-
+## This function doesn't seem to work
 def get_wikipedia_data(n_files, n_vocab, by_paragraph=False):
     #repo_path = os.path.dirname(os.path.realpath('__file__'))
     #print "inside get_wikipedia_data() : current path = %s" %repo_path
