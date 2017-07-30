@@ -1,0 +1,6 @@
+version: '2'
+
+services:
+  anthill-nlp:
+    build: .
+    image: anthill-nlp
