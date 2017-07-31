@@ -23,6 +23,11 @@ It has 4 modules:
 	* Tweet2Vec
 	* CharCNN (giving some bugs)
 
+Slides : 
+https://www.slideshare.net/anujgupta5095/representation-learning-of-text-for-nlp
+
+
+
 
 
 
