@@ -26,9 +26,4 @@ It has 4 modules:
 Slides : 
 https://www.slideshare.net/anujgupta5095/representation-learning-of-text-for-nlp
 
-
-
-
-
-
-
+password for the virtual machine associated with the repo : "password"
