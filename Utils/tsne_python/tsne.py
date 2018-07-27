@@ -99,10 +99,10 @@ def tsne(X = Math.array([]), no_dims = 2, initial_dims = 50, perplexity = 30.0, 
 
 	# Check inputs
 	if isinstance(no_dims, float):
-		print "Error: array X should have type float.";
+		print ("Error: array X should have type float.")
 		return -1;
 	if round(no_dims) != no_dims:
-		print "Error: number of dimensions should be an integer.";
+		print ("Error: number of dimensions should be an integer.")
 		return -1;
 
 	# Initialize variables
@@ -165,8 +165,8 @@ def tsne(X = Math.array([]), no_dims = 2, initial_dims = 50, perplexity = 30.0, 
 
 
 if __name__ == "__main__":
-	print "Run Y = tsne.tsne(X, no_dims, perplexity) to perform t-SNE on your dataset."
-	print "Running example on 2,500 MNIST digits..."
+	print ("Run Y = tsne.tsne(X, no_dims, perplexity) to perform t-SNE on your dataset.")
+	print ("Running example on 2,500 MNIST digits...")
 	X = Math.loadtxt("mnist2500_X.txt");
 	labels = Math.loadtxt("mnist2500_labels.txt");
 	Y = tsne(X, 2, 50, 20.0);
